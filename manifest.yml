@@ -1,4 +1,4 @@
-name: student20-flight-school
+name: concourse-test-school
 memory: 128M
 random-route: true
 path: .
