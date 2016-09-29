@@ -1,0 +1,8 @@
+github-uri: https://github.com/.../flight-school.git
+github-branch: master
+cf-api: https://api.local.micropcf.io
+cf-username: admin
+cf-password: admin
+cf-org: micropcf-org
+cf-space: micropcf-space
+cf-manifest-host: pcfdemo-ci
