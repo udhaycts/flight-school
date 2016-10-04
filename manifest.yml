@@ -2,6 +2,7 @@
 applications:
 - name: udhay-concourse
   memory: 128M
+  path: .
   instances: 1
   services:
     - testmysqlservice
