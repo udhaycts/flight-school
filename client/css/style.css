@@ -1,0 +1,359 @@
+@font-face {
+  font-family: 'open sanslight';
+  src: url('../fonts/OpenSans-Light-webfont.eot');
+	src: url('../fonts/OpenSans-Light-webfont.eot?iefix') format('eot'),
+	     url('../fonts/OpenSans-Light-webfont.woff') format('woff'),
+	     url('../fonts/OpenSans-Light-webfont.ttf') format('truetype'),
+	     url('../fonts/OpenSans-Light-webfont.svg#webfont') format('svg');
+}
+@font-face {
+  font-family: 'open sans';
+ src: url('../fonts/OpenSans-Regular-webfont.eot');
+	src: url('../fonts/OpenSans-Regular-webfont.eot?iefix') format('eot'),
+	     url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
+	     url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+	     url('../fonts/OpenSans-Regular-webfont.svg#webfont') format('svg');
+}
+@font-face {
+  font-family: 'open sanssemibold';
+src: url('../fonts/OpenSans-Semibold-webfont.eot');
+	src: url('../fonts/OpenSans-Semibold-webfont.eot?iefix') format('eot'),
+	     url('../fonts/OpenSans-Semibold-webfont.woff') format('woff'),
+	     url('../fonts/OpenSans-Semibold-webfont.ttf') format('truetype'),
+	     url('../fonts/OpenSans-Semibold-webfont.svg#webfont') format('svg');
+}
+.fright{
+	float:right;
+}
+.fleft{
+	float:left;
+}
+.clearfix:before,.clearfix:after {
+	content: " ";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.ToDoApp{
+	width:100%;
+}
+.ToDoApp .logoHdr{
+	width: 100%;
+    height: 55px;
+    background-color: #1f1f1f;
+    box-shadow: 0px -2px 0px 2px #cacccf;
+    position: fixed;
+    top: 0px;
+}
+.ToDoApp .logoHdr img{
+    margin: 6px 4px;
+}
+.ToDoApp .contentDiv{
+	width:100%;
+}
+.ToDoApp .contentDiv .headerDiv{
+	width: 100%;
+    height: 55px;
+    background-color: #ebeef0;
+    border-bottom: #e3e3e3 solid 1px;
+	margin-top:56px;
+	text-align:center;
+}
+.ToDoApp .contentDiv .headerDiv img{
+	    margin-top: -10px;
+}
+.ToDoApp .contentDiv .headerDiv .hdrCount{
+	margin: -8px 7px;
+    width: 45px;
+    background-color: #2fcc70;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+	color:white;
+	font-family:open sans;
+}
+.ToDoApp .contentDiv .headerDiv .headerdivh2{
+    font-family: open sans;
+    font-size: 24px;
+    text-align: center;
+    padding: 14px 0px;
+	color:#121b21;
+	width:100%;
+}
+.ToDoApp .contentDiv .ToDoList{
+	width:45%;
+	margin:4% auto;
+	text-align:center;
+}
+.ToDoApp .contentDiv .ToDoList h2{
+    color: #4b6775;
+    font-family: open sanssemibold;
+    font-size: 26px;
+	text-align:center;
+
+}
+.ToDoApp .contentDiv .ToDoList .todohdr{
+	width:45%;
+	text-align:center;
+	margin:20px auto 25px;
+}
+.ToDoApp .contentDiv .ToDoList .todohdr h2{
+	    padding: 10px 0;
+}
+.ToDoApp .contentDiv .ToDoList .inputdiv input{
+	text-align: center;
+    width: 90%;
+    padding: 2.55% 0%;
+    border: 1px solid #d4d4d4;
+    box-shadow: #f7f7f7 2px 0px 3px 5px;
+	height:15px;
+  float:left;
+  margin-right:1%;
+}
+
+input:focus {outline:0 !important;}
+.ToDoApp .contentDiv .ToDoList .inputdiv img{
+	vertical-align:middle;
+}
+
+
+.ToDoApp .contentDiv .ToDoList .ToDoTbl{
+	width:100%;
+	margin:4% auto;
+	text-align:center;
+	/* border:1px solid #e3e3e3; */
+	font-family:open sans;
+}
+.ToDoApp .contentDiv .ToDoList .ToDoTbl .ToDoRow{
+	border-bottom:1px solid #e3e3e3;
+	padding:1%;
+	line-height:3.3rem;
+	background-color:#fcfcfc;
+}
+.ToDoApp .contentDiv .ToDoList .ToDoTbl .ToDoRow .tdhead{
+    width: 73%;
+    text-align: left;
+    padding: 0px 0px 0px 20px;
+	color:#717c82;
+	font-family:open sanssemibold;
+}
+.ToDoApp .contentDiv .ToDoList .ToDoTbl .ToDoRow .tdIcons{
+	font-size:12px;
+	color:#717c82;
+	font-weight:600;
+	float:left;
+	text-decoration:none;
+	width:5%;
+}
+.ToDoApp .contentDiv .ToDoList .ToDoTbl .ToDoRow .tdIcons img{
+	vertical-align:middle;
+}
+.ToDoApp .contentDiv .ToDoList .ToDoTbl .ToDoRow .borderleft{
+	border-right:1px solid #e3e3e3;
+	padding: 4% 20%;
+}
+
+.ToDoApp .contentDiv .ToDoList .todohdr .count{
+    width: 45px;
+    height: 45px;
+    border-radius: 8px;
+    background-color: #f5bb58;
+	margin:0 15px;
+	line-height: 45px;
+	color:#fff;
+	font-size:20px;
+	font-family:open sanssemibold;
+}
+.ToDoApp .contentDiv .ToDoList .todohdr  .countcnt{
+	padding:18px 0;
+	font-size:10px;
+	font-family:open sanssemibold;
+	color: #4b6775;
+}
+.inputcls{
+	width: 73%;
+    text-align: left;
+    padding: 0px 0px 0px 20px;
+    color: #717c82;
+	line-height:3rem;
+    font-family: open sanssemibold;
+}
+.imgdiv{
+    width: 8%;
+    height: 7.3vh;
+    float: left;
+  }
+  .imgdiv img{
+    width: 100%;
+    height: 100%;
+  }
+
+.inputdiv input::-webkit-input-placeholder { color:#4b6775; font-family:open sanssemibold; font-size:16px;}
+.inputdiv input::-moz-placeholder { color:#4b6775; font-family:open sanssemibold; font-size:16px; } /* firefox 19+ */
+.inputdiv input:-ms-input-placeholder { color:#4b6775; font-family:open sanssemibold;font-size:16px; } /* ie */
+.inputdiv input:-moz-placeholder { color:#4b6775; font-family:open sanssemibold; font-size:16px; }
+
+@media only screen and (min-width: 1140px) and (max-width: 1200px) {
+  .imgdiv {
+      width: 8%;
+      height: 7vh;
+      float: left;
+  }
+}
+@media only screen and (min-width: 1075px) and (max-width: 1140px) {
+  .ToDoApp .contentDiv .ToDoList h2 {
+    color: #4b6775;
+    font-family: open sanssemibold;
+    font-size: 23px;
+    text-align: center;
+}
+.ToDoApp .contentDiv .ToDoList {
+    width: 50%;
+    margin: 4% auto;
+    text-align: center;
+}
+.imgdiv {
+    width: 8%;
+    height: 7vh;
+    float: left;
+}
+}
+
+@media only screen and (min-width: 940px) and (max-width: 1075px) {
+  .ToDoApp .contentDiv .ToDoList h2 {
+    font-size: 21px;
+}
+.ToDoApp .contentDiv .ToDoList .todohdr .count {
+    width: 45px;
+    height: 45px;
+    border-radius: 8px;
+    background-color: #f5bb58;
+    margin: 0 6px;
+    line-height: 45px;
+    color: #fff;
+    font-size: 20px;
+    font-family: open sanssemibold;
+}
+.imgdiv {
+    width: 8%;
+    height: 7vh;
+    float: left;
+}
+.ToDoApp .contentDiv .ToDoList {
+    width: 56%;
+    margin: 4% auto;
+    text-align: center;
+}
+}
+
+@media only screen and (min-width: 780px) and (max-width: 940px) {
+.ToDoApp .contentDiv .ToDoList h2 {
+    color: #4b6775;
+    font-family: open sanssemibold;
+    font-size: 20px;
+    text-align: center;
+}
+.ToDoApp .contentDiv .ToDoList .todohdr .count {
+    width: 45px;
+    height: 45px;
+    border-radius: 8px;
+    background-color: #f5bb58;
+    margin: 0 6px;
+    line-height: 45px;
+    color: #fff;
+    font-size: 20px;
+    font-family: open sanssemibold;
+}
+
+.ToDoApp .contentDiv .ToDoList {
+    width: 63%;
+    margin: 4% auto;
+    text-align: center;
+}
+}
+@media only screen and (min-width: 850px) and (max-width: 940px) {
+  .imgdiv {
+      width: 8%;
+      height: 7.3vh;
+      float: left;
+  }
+}
+@media only screen and (min-width: 780px) and (max-width: 850px) {
+  .imgdiv {
+      width: 8%;
+      height: 6.8vh;
+      float: left;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 780px) {
+  .ToDoApp .contentDiv .ToDoList h2 {
+      color: #4b6775;
+      font-family: open sanssemibold;
+      font-size: 20px;
+      text-align: center;
+  }
+  .ToDoApp .contentDiv .ToDoList .todohdr .count {
+      width: 45px;
+      height: 45px;
+      border-radius: 8px;
+      background-color: #f5bb58;
+      margin: 0 6px;
+      line-height: 45px;
+      color: #fff;
+      font-size: 20px;
+      font-family: open sanssemibold;
+  }
+  .imgdiv {
+      width: 8%;
+      height: 7.5vh;
+      float: left;
+  }
+  .ToDoApp .contentDiv .ToDoList {
+      width: 80%;
+      margin: 4% auto;
+      text-align: center;
+  }
+}
+
+@media only screen and (min-width: 1380px) and (max-width: 1530px) {
+  .imgdiv {
+      width: 8%;
+      height: 7vh;
+      float: left;
+  }
+}
+@media only screen and (min-width: 1530px) and (max-width:1830px ) {
+  .imgdiv {
+      width: 8%;
+      height: 6.7vh;
+      float: left;
+  }
+}
+@media only screen and (min-width: 1830px) and (max-width:2060px ) {
+  .imgdiv {
+      width: 8%;
+      height: 6.5vh;
+      float: left;
+  }
+}
+
+@media only screen and (min-width: 1050px) and (max-width:1100px) and (min-height:520px) and (max-height:540px){
+
+  .imgdiv {
+    width: 8%;
+    height: 8vh;
+    float: left;
+}
+.ToDoApp .contentDiv .ToDoList .ToDoTbl .ToDoRow .borderleft {
+    border-right: 1px solid #e3e3e3;
+    padding: 4% 15%;
+}
+}
+
+@media only screen and (min-width: 1230px) and (max-width:1245px) and (min-height:590px) and (max-height:605px){
+  .ToDoApp .contentDiv .ToDoList .ToDoTbl .ToDoRow .borderleft {
+    border-right: 1px solid #e3e3e3;
+    padding: 4% 15%;
+}
+}

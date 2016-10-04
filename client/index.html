@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html ng-app="toDo">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script><!-- load angular -->
+    <script src="./controllers/toDo.js"></script> <!-- load up our controller -->
+    <script src="./services/toDo.js"></script> <!-- load up our services -->
+	<meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+</head>
+<body>
+	<div class="ToDoApp">
+		<header>
+			<div class="logoHdr">
+				<img src="images/logo.png" alt="logo.png"/>
+			</div>
+		</header>
+		<div class="contentDiv" ng-controller="ToDoController">
+			<div class="headerDiv">
+				<h2 class="headerdivh2 clearfix fleft">Node-Angular ToDo
+				</h2>
+			</div>
+			<div class="ToDoList">
+				<div class="clearfix todohdr">
+					<h2 class="fleft">To Do List</h2>
+					<span class="fleft count">{{ todos.length }}</span>
+					<span class="fleft countcnt">COUNT</span>
+				</div>
+				<div class ="clearfix inputdiv">
+					<input id="first_name" type="text" placeholder="Add To Do" ng-model="formData.task_name"/>
+					<div class="clearfix imgdiv">
+						<img class="fright" src="images/AddIcon.png" alt="AddIcon.png" ng-click="createTodo()"/>
+					</div>
+				</div>
+				<div class="ToDoTbl">
+					<div class="clearfix ToDoRow" ng-repeat="todo in todos" style="border:1px solid #e3e3e3;">
+
+						<label class="fleft tdhead" ng-hide="todo.isEditable"><b>{{ todo.task_name }}</b></label>
+					<div class="bforedit" id="Bforedit_{{todo._id}}" >
+							<a href="#" class="tdIcons">
+								<img src="images/Edit.png" alt="Edit.png" ng-click="toggleEdit(todo);">
+							</a>
+							<a href="#" class="clearfix tdIcons">
+								<h5 class=""><span class="borderleft" ng-click="toggleEdit(todo);">Edit</span></h5>
+							</a>
+							<a href="#" class="tdIcons">
+								<img src="images/Delete.png" alt="Delete.png"  ng-click="deleteTodo(todo);">
+							</a>
+							<a href="#" class="tdIcons" ng-click="deleteTodo(todo);">
+								<h5>Delete</h5>
+							</a>
+					</div>
+							<input class="fleft inputcls" type="text" id ={{todo._id}} ng-show="todo.isEditable" value={{todo.task_name}}>
+
+						<a href="#" class="tdIcons">
+							<img id="icon3_{{todo._id}}" style="display: none;"
+							src="images/save.png" alt="save.png"/  ng-click="saveEdit(todo);">
+						</a>
+						<a href="#" class="clearfix tdIcons">
+							<h5 class=""><span  style="display: none;" id="icon7_{{todo._id}}" ng-click="saveEdit(todo);">Save</span></h5>
+							</a>
+						<a href="#" class="tdIcons">
+							<img id="icon4_{{todo._id}}" style="display: none;"
+							src="images/close.png" alt="close.png"/  ng-click="cancelEdit(todo);">
+							</a>
+						<a href="#" class="tdIcons" id="icon8_{{todo._id}}" ng-click="cancelEdit(todo);" style="display: none;">
+							<h5>Cancel</h5>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

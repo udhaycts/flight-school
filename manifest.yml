@@ -1,4 +1,7 @@
-name: concourse-test-school
-memory: 128M
-random-route: true
-path: .
+---
+applications:
+- name: udhay-concourse
+  memory: 128M
+  instances: 1
+  services:
+    - testmysqlservice
